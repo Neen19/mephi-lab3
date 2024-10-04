@@ -20,5 +20,5 @@ public class InfoDAORepository extends AbstractDAO<InfoDAO> {
             }
         } return instance;
     }
-
+// DB - raw data - entity - DAO (aka repository) - service (model) - service - .... - (usecase) - listener or servlet or controller (dto)
 }

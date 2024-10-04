@@ -14,7 +14,8 @@ public class AuthService {
     public Boolean auth(String login, String password) {
         if (!isPresent(login)) {
             return false;
-        } String pasHash = DigestUtils.sha256Hex(password);
+        }
+        String pasHash = DigestUtils.sha256Hex(password);
         return pasHash.equals(userDAO.findById(login).getPassword());
     }
 }
